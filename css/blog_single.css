@@ -1,0 +1,630 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navigation */
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar ul,
+.navbar li {
+    display: inline-flex;
+    text-decoration: none;
+    margin: auto;
+}
+
+.navbar ul {
+    margin-right: 2rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.6rem 1.3rem;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+}
+
+.active,
+.nav-link:hover {
+    background-color: #deb887;
+    color: #fff;
+}
+
+.active-link {
+    color: #fff;
+}
+
+.logo {
+    height: 50px;
+    width: 150px;
+}
+
+.dropdown {
+    position: relative;
+    border-radius: 3px;
+
+}
+
+.dropdown .link {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.6rem 1.3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: calc(100% + 3rem);
+    background-color: #fff;
+
+
+}
+
+.sub-link {
+    display: none;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: #000;
+    padding: 0.6rem 1.5rem;
+
+}
+
+.dropdown:hover .sub-link {
+    display: block;
+}
+
+.dropdown .link:hover,
+.sub-link:hover {
+    background-color: #deb887;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.dropdown i {
+    padding: 0px;
+    margin: 0;
+}
+
+.heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.subheading {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* top section  */
+.top-section {
+    background-image: url("../images/menu_img1.jpg");
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+.top-section::before {
+    background: #010101;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+.top-h2 {
+    position: relative;
+}
+
+.top-heading {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-top: 16rem;
+    text-align: center;
+}
+
+.heading {
+    margin: 3rem 1rem 1rem;
+    font-size: 2rem;
+}
+
+.subheading {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#blog-section {
+    background-color: #fff;
+    text-align: center;
+}
+
+
+.inline {
+    float: left;
+}
+
+.blog-img {
+    width: 70%;
+}
+
+.blog-img .img {
+    width: 700px;
+    height: 425px;
+    box-shadow: -12px -12px rgb(0 0 0 / 40%);
+    margin: 1%;
+
+}
+
+.blog-date {
+    background-color: burlywood;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    float: right;
+    position: relative;
+    right: 250px;
+    top: 25px;
+}
+
+
+.main-content {
+    padding: 3% 12%;
+    text-align: left;
+}
+
+.main-content h3 {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-content ul {
+
+    margin: 0 1rem;
+}
+
+.main-content ul li {
+    display: inline;
+    list-style-type: none;
+    margin: 0 0.5rem;
+}
+
+.color {
+    margin-left: 5px;
+    color: burlywood;
+}
+
+.main-content p {
+    font-size: 0.9rem;
+    line-height: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2rem 0;
+}
+
+.main-content blockquote {
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 28px;
+    padding: 3rem 1.5rem;
+    border-left: 6px solid burlywood;
+}
+
+.all-comments {
+    padding: 10% 0;
+}
+
+.all-comments h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 2rem;
+}
+
+.comments {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.avatar-img {
+    width: 13%;
+    height: 3%;
+}
+
+.avatar-comments {
+    padding: 0 5%;
+}
+
+.avatar-comments h4,
+.avatar-comments p {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+
+.avatar-comments h4 {
+    margin-right: 347px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.comments-para {
+    padding: 0 5% 0 0;
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.avatar-comments p {
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.reply-btn {
+    font-family: verdana;
+    font-size: 14px;
+    text-decoration: none;
+    color: #010101;
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    padding: 12px 21px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    transform: scale(0.8);
+}
+
+
+.reply-btn:hover {
+    background-color: #cfa671;
+    color: #ffffff !important;
+}
+
+.admin {
+    transform: scale(0.9);
+}
+
+.admin-img {
+    margin-left: 3rem;
+    border-radius: 100%;
+}
+
+.admin-comments {
+    padding-right: 0;
+}
+
+.post-comments {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 2.5rem;
+}
+
+.left-form {
+    float: left;
+    margin: 1rem 6rem 1rem 0rem;
+}
+
+.leave-input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 325px;
+    height: 50px;
+    margin: 1rem 0;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+.text-area {
+    margin: 2rem 0;
+}
+
+.text-area textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 325px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+.leave-input:focus,
+.text-area textarea:focus {
+    outline: burlywood;
+    border: 1px solid burlywood;
+}
+
+.comment-btn {
+    border: 1px solid burlywood;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 1.2rem 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: burlywood;
+
+}
+
+.comment-btn:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+.side-bar {
+    text-align: left;
+    padding: 1%;
+    float: right;
+    width: 30%;
+}
+
+.side-bar h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+
+.search-btn {
+
+    padding: 1rem 0rem;
+    border-radius: 10px;
+    background-color: #cccccc;
+    border: none;
+    display: inline;
+    transform: scale(0.8);
+    margin: 0;
+}
+
+.search {
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.1rem 2rem;
+    width: 60%;
+    height: 40px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.categories {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    margin: 1rem;
+    padding-left: 1.5rem;
+}
+
+.categories a {
+    text-decoration: none;
+    color: #000;
+}
+
+.categories a:hover {
+    color: burlywood;
+}
+
+.recent {
+    margin: 2rem;
+}
+
+.recent-post h3 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.recent-post {
+    margin: 5rem 0;
+}
+
+.recent-img {
+    float: left;
+    width: 90px;
+    height: 90px;
+
+}
+
+
+
+.recent-text ul {
+    margin-bottom: 0.5rem;
+    margin-left: 7rem;
+}
+
+.recent-text p {
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0.5rem;
+    margin-left: 7rem;
+}
+
+.recent-text li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    font-size: 0.7rem;
+}
+
+
+.recent-tag {
+    text-align: center;
+
+
+}
+
+.recent-tag ul {
+
+    margin-left: 2rem;
+}
+
+.recent-tag ul li {
+    display: inline-block;
+    margin: 3px;
+    text-align: left;
+    width: 26%;
+    list-style-type: none;
+    ;
+}
+
+
+
+
+
+.recent-tag ul li a {
+    text-align: center;
+    list-style: none;
+    padding: 10px 25px;
+    display: block;
+    background: #f5f5f5;
+    color: #222222;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 14px;
+    margin: 0.5rem 0;
+
+}
+
+.recent-tag ul li a:hover {
+    color: #ffffff;
+    background: #cfa671;
+}
+
+
+.contact-info {
+    clear: both;
+    background-color: #d0a772;
+    color: #fff;
+}
+
+.contact {
+    display: inline-block;
+    width: 32%;
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+.contact-details {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    text-align: left;
+
+}
+
+.fas {
+    font-size: 2.5rem;
+    margin: 0 1.5rem;
+}
+
+.footer {
+    display: inline-flex;
+    overflow: hidden;
+    height: 22rem;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../images/bg_footer.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+
+}
+
+.footer-elements {
+    max-height: 200px;
+    width: 20%;
+    margin: 1rem 2rem;
+    color: #fff;
+    margin-bottom: 10%;
+}
+
+.footer-heading {
+    border-bottom: 2px dotted rgba(207, 166, 113, 0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+}
+
+.footer-description {
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+
+.email {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 0.8rem;
+    width: 100%;
+
+}
+
+.subscribe {
+    background-color: #d0a772;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    line-height: 25px;
+    width: 100%;
+}
+
+.subscribe:hover {
+    background-color: #000;
+
+}
+
+.social {
+    margin-top: 2rem;
+}
+
+.social a {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.copy-right {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
+    text-align: center;
+}

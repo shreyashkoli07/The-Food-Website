@@ -1,0 +1,34 @@
+
+/* top section  */
+.top-section {
+    background-image: url("../images/menu_img1.jpg");
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+.top-section::before{
+    background: #010101;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+.top-h2{
+    position: relative;
+}
+.top-heading {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-top: 16rem;
+    text-align: center;
+
+}
+

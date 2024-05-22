@@ -1,0 +1,123 @@
+
+
+/* top section  */
+.top-section {
+    background-image: url("../images/menu_img1.jpg");
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+.top-section::before {
+    background: #010101;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+.top-h2 {
+    position: relative;
+}
+
+.top-heading {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-top: 16rem;
+    text-align: center;
+}
+
+.heading {
+    margin: 3rem 1rem 1rem;
+    font-size: 2rem;
+}
+
+.subheading {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#blog-section {
+    text-align: center;
+}
+
+.blogs {
+    margin:4% 3%;
+}
+
+.blog-card {
+    border: 1px solid #cccccc;
+    width: 25%;
+    display: inline-block;
+    height: 450px;
+    text-align: left;
+    padding: 1% 1%;
+    margin: 2% 1%;
+
+}
+.blog-card:hover{
+    
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url("../images/Blogimg_1.jpg");
+    background-size: cover;
+    background-position: center;
+    color:#fff ;
+    transition: 0.5s;
+}
+
+
+.card-heading {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 2rem;
+
+}
+
+.blog-card ul li {
+    color: burlywood;
+    margin-right: 1rem;
+}
+
+.blog-card ul {
+    padding: 0 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-card p {
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 28px;
+    padding: 0 2rem;
+    margin-bottom: 1.5rem;
+}
+.blog-card .p2{
+    margin-bottom:2.5rem ;
+}
+
+.read-more-btn {
+    color: burlywood;
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid burlywood;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    margin: 0 2rem;
+}
+.read-more-btn:hover{
+    background-color: burlywood;
+    color: #fff;
+
+}
+
+
+

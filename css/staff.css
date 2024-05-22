@@ -1,0 +1,129 @@
+
+
+/* top section  */
+.top-section {
+    background-image: url("../images/menu_img1.jpg");
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+
+.top-section::before {
+    background: #010101;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+
+}
+
+.top-h2 {
+    position: relative;
+}
+
+.top-heading {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-top: 16rem;
+    text-align: center;
+
+}
+
+/* staff section  */
+
+#staff-section {
+    text-align: center;
+    padding: 3rem;
+
+}
+
+.staff-heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 3rem;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.staff-subheading {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* staff  */
+.staff-gallery {
+    margin-top: 5rem ;
+    position: relative;
+    z-index: 1;
+   
+}
+
+.staff-img {
+    margin-top: 3rem;
+    margin: 0 1.5rem;
+    display: inline-flex;
+    width: 20%;
+    position: relative;
+ 
+}
+
+.staff-img img {
+    width: 100%;
+    border: 2px solid burlywood;
+  
+
+}
+
+.content {
+    color: #fff;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 0%;
+}
+
+.staff-name {
+    margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.staff-post {
+    padding: 0.8rem 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content ul {
+    margin: auto;
+}
+
+.content li {
+    margin: 1.2rem 1rem;
+}
+
+.content a {
+    color: #fff;
+}
+
+.content li:hover .fab {
+
+    border-radius: 100%;
+    box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
+}
+.staff-img:hover .content{
+    opacity: 100%;
+    transform: translateY(50% -50%);
+    transition: all 0.3s ease-in-out;
+}
+
